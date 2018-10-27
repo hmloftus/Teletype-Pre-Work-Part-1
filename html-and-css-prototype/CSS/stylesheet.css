@@ -1,27 +1,27 @@
 /* Global resets */
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
-	color: #424242;
-	line-height: 1.4;
+  font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+  color: #424242;
+  line-height: 1.4;
 }
 
 /* Fonts */
 h1 {
-	font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
-	font-size: 2.5em;
-	font-weight: bold;
+  font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
+  font-size: 2.5em;
+  font-weight: bold;
 }
 
 .container {
-	margin: 2em auto;
-	max-width: 630px;
-	text-align: center;
+  margin: 2em auto;
+  max-width: 630px;
+  text-align: center;
 }
 
 /* The following font information and color codes are provided for you.  They do not match the prototype exactly, but they are fine to use for the assignment and doing so does not count against you.  They are simply meant to help you save time.  We would like everyone to have as close to a pixel-perfect match to the prototype as possible.  If you do find a font/color that matches more precisely, please share it with the team so we can improve the activity for future applicants.  Thank you!  Happy coding!
@@ -38,5 +38,169 @@ h1 {
   grey: #777;
   light grey: #eaeaea;
 */
-
 /* Your CSS code goes here */
+/* Author: Hannah Loftus */
+/* File: stylesheet.css */
+/* Date: Oct 27 2018 */
+
+/* Main Header */
+h1 {
+  text-align: center;
+}
+
+/* Grey figure caption */
+figcaption {
+  font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+  font-size: 13px;
+  color: white;
+  text-align: center;
+  background-color: #777;
+  width: 250px;
+  padding: 15px;
+  border-radius: 2.25px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+
+figcaption, .speech-bubble {
+	position: relative;
+	background: #777;
+	border-radius: .4em;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 85%;
+	width: 0;
+	height: 0;
+	border: 7px solid transparent;
+	border-top-color: #777;
+	border-bottom: 0;
+	margin-left: -7px;
+	margin-bottom: -7px;
+}
+
+/* Paragraph styles */
+p {
+  text-align: left;
+  font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+  color: #777;
+  line-height: 1.6;
+  font-size: 12px;
+  padding-bottom: 15px;
+}
+
+/* Orange text span */
+#orangeType {
+  color: #EF5F3C;
+  font-weight: bold;
+}
+
+/* Main content body with border */
+main {
+  margin: 0 auto;
+  width: 250px;
+  padding: 15px;
+  padding-top: 15px;
+  border-style: solid;
+  border-width: thin;
+  border-color: #eaeaea;
+}
+
+/* Button Styles */
+button {
+  font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+}
+
+/* Form Submission Contents */
+form {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Input Area for monetary donation */
+input {
+  width: 45%;
+  color: black;
+  border-color: #eaeaea;
+  border-style: solid;
+  border-radius: 2.5px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 14px;
+}
+
+/* Green Give Now Button */
+.giveNow {
+  width: 45%;
+  background-color: #1CBC2C;
+  border-color: #1CBC2C;
+  color: white;
+  border-radius: 2.5px;
+  border-style: solid;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 14px;
+  margin-right: 6px;
+}
+
+/* Footer with information for donation amounts */
+footer {
+  font-size: 12px;
+  padding-top: 10px;
+}
+
+/* Footer Link */
+a {
+	text-decoration: none;
+	color: #20A1D4;
+}
+
+/* Additional Call to Action Section Container*/
+section {
+  margin: auto;
+  width: 250px;
+  margin-top: 9px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Call to action buttons */
+.altButton {
+  background-color: #eaeaea;
+  color: #777;
+  border: 1px solid;
+  border-color: #777;
+  border-radius: 2.5px;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 10px 18px;
+  margin-bottom: 5px;
+}
+
+/* Figure Bar */
+figure {
+  position: relative;
+  display: block;
+  width: 250px;
+  height: 12px;
+  margin: 0 auto;
+  background: #eaeaea;
+}
+
+/* Orange graph bar */
+.bar.orange {
+  background: #EF5F3C;
+}
+
+/* Bar */
+.bar {
+  position: absolute;
+  display: block;
+  height: 100%;
+  background: #FCB31C;
+  width: 75%;
+}
